@@ -1,0 +1,145 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "sacramento", cursive;
+  color: #656d5f;
+  background-image: url("https://i.postimg.cc/8Pp3cg8r/wood.jpg");
+}
+.card {
+  border-radius: 30px;
+  box-shadow: -1px 1px 9px rgba(0, 0, 0, 0.3);
+  display: block;
+  height: 720px;
+  margin: 1em;
+  max-width: 450px;
+  min-width: 450px;
+  padding: 2em;
+  width: 100%;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Times New Roman", Times, serif;
+}
+.search-bar {
+  padding: 0.4em 1em;
+  border: none;
+  border-radius: 24px;
+  background: #656d5f2b;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 105%;
+  width: calc(100% - 80px);
+}
+
+button {
+  margin: 0.5em;
+  background-color: #d6a8aa;
+  border-radius: 50px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px;
+  color: #f8f7ef;
+  height: 44px;
+  width: 44px;
+  transition: ease-in-out 150ms;
+}
+
+button:hover {
+  background: #d5878e;
+  color: #fff;
+}
+.header {
+  font-size: 50px;
+  text-align: center;
+  padding-top: 0.5em;
+  margin: 0 auto;
+}
+.weather {
+  position: relative;
+  text-align: center;
+  color: #d5878e;
+}
+.date {
+  margin-top: 2%;
+  font-size: 25px;
+  font-family: "Courier New", Courier, monospace;
+  color: #656d5f;
+}
+.sun-icon {
+  height: 175px;
+  margin-right: 25%;
+  margin-bottom: 5%;
+}
+.temperature {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 10%;
+  font-size: 110px;
+  text-align: center;
+  color: #5c3a24;
+  font-weight: bold;
+}
+.units {
+  position: relative;
+  top: -34px;
+  right: 10%;
+}
+.description {
+  position: flex;
+  margin: 0;
+  font-size: 50px;
+  text-align: center;
+}
+.bottom-card {
+  margin-top: 5%;
+  color: #fff;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  background-color: #656d5f;
+  border-radius: 30px;
+  box-shadow: -1px 1px 9px rgba(0, 0, 0, 0.3);
+  display: block;
+  height: 160px;
+}
+.card-mini {
+  background-color: #fff;
+  border-radius: 30px;
+  color: #5c3a24;
+  width: 70px;
+  margin-left: 3px;
+  margin-right: 1px;
+}
+.row {
+  padding: 5px 0;
+}
+.weekday {
+  color: #5c3a24;
+  margin: 0 auto;
+  font-size: 20px;
+  padding-top: 15px;
+  text-align: center;
+}
+.mini-icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 70px;
+}
+.col {
+  padding: 0;
+}
+.temp {
+  text-align: center;
+  color: #5c3a24;
+  font-weight: bold;
+  font-family: "sacramento", cursive;
+}
+.container {
+  padding: 7px 12px 12px 12px;
+}

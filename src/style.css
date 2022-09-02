@@ -97,6 +97,8 @@ button:hover {
   text-align: center;
 }
 .desc {
+  margin-top: 3%;
+  margin-bottom: auto;
   font-size: 20px;
   font-family: "Courier New", Courier, monospace;
   color: #5c3a24;

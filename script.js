@@ -24,6 +24,11 @@ function displayWeather(response) {
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
   );
+  document.querySelector("#weather-desc").innerHTML =
+    response.data.weather[0].description;
+  document.querySelector("#wind-speed").innerHTML = Math.round(
+    response.data.wind.speed
+  );
 }
 
 function search(event) {

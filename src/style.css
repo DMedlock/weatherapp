@@ -64,7 +64,7 @@ button:hover {
   color: #d5878e;
 }
 .date {
-  margin-top: 2%;
+  margin-top: 1%;
   font-size: 25px;
   font-family: "Courier New", Courier, monospace;
   color: #656d5f;
@@ -79,7 +79,7 @@ button:hover {
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin-top: 10%;
+  margin-top: 3%;
   font-size: 110px;
   text-align: center;
   color: #5c3a24;

@@ -30,6 +30,10 @@ function displayWeather(response) {
   cityElement.innerHTML = response.data.name;
   descriptionElement.innerHTML = response.data.weather[0].description;
   windElement.innerHTML = Math.round(response.data.wind.speed);
+  iconElement.setAttribute(
+    "src",
+    `images/${response.date.weather[0].description}`
+  );
 }
 
 function search(event) {

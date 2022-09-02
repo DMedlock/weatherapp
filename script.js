@@ -20,15 +20,16 @@ let day = days[now.getDay()];
 h3.innerHTML = `${day} ${hour}:${minutes}`;
 
 function displayWeather(response) {
-  document.querySelector("#city-desc").innerHTML = response.data.name;
-  document.querySelector("#temperature").innerHTML = Math.round(
-    response.data.main.temp
-  );
-  document.querySelector("#weather-desc").innerHTML =
-    response.data.weather[0].description;
-  document.querySelector("#wind-speed").innerHTML = Math.round(
-    response.data.wind.speed
-  );
+  let temperatureElement = document.querySelector("#temperature");
+  let cityElement = document.querySelector("#city-desc");
+  let descriptionElement = document.querySelector("#weather-desc");
+  let windElement = document.querySelector("#wind-speed");
+  let iconElement = document.querySelector("#icon");
+
+  temperatureElement.innerHTML = Math.round(response.data.main.temp);
+  cityElement.innerHTML = response.data.name;
+  descriptionElement.innerHTML = response.data.weather[0].description;
+  windElement.innerHTML = Math.round(response.data.wind.speed);
 }
 
 function search(event) {

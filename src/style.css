@@ -93,6 +93,14 @@ button:hover {
 .active:hover {
   text-decoration: none;
 }
+.inactive {
+  color: #5c3a24;
+  text-decoration: none;
+  cursor: default;
+}
+.inactive:hover {
+  text-decoration: none;
+}
 .units {
   position: relative;
   top: -34px;

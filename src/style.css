@@ -173,3 +173,12 @@ button:hover {
 .container {
   padding: 7px 12px 12px 12px;
 }
+.sources a {
+  font-family: "Courier New", Courier, monospace;
+  color: #656d5f;
+  text-decoration: none;
+}
+.sources {
+  text-align: center;
+  font-size: 15px;
+}

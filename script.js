@@ -20,6 +20,7 @@ let day = days[now.getDay()];
 h3.innerHTML = `${day} ${hour}:${minutes}`;
 
 function displayWeather(response) {
+  console.log(response.data);
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city-desc");
   let descriptionElement = document.querySelector("#weather-desc");

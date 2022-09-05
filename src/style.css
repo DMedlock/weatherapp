@@ -85,6 +85,14 @@ button:hover {
   color: #5c3a24;
   font-weight: bold;
 }
+.active {
+  color: #5c3a24;
+  cursor: default;
+  text-decoration: none;
+}
+.active:hover {
+  text-decoration: none;
+}
 .units {
   position: relative;
   top: -34px;

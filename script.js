@@ -32,7 +32,7 @@ function displayWeather(response) {
   windElement.innerHTML = Math.round(response.data.wind.speed);
   iconElement.setAttribute(
     "src",
-    `images/${response.date.weather[0].description}`
+    `images/${response.data.weather[0].description}.png`
   );
 }
 

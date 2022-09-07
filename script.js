@@ -19,6 +19,29 @@ let day = days[now.getDay()];
 
 h3.innerHTML = `${day} ${hour}:${minutes}`;
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class ="row">`;
+  let days = ["Mon", "Tues", "Wed", "Thur", "Fri"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="col">
+      <div class="weekday">
+        ${day}
+      </div>
+      <img src="images/overcast clouds.png" alt="sun" class="mini-icon" />
+      <div class="temp">
+        80°
+      </div>
+  </div>`;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function displayWeather(response) {
   console.log(response.data);
   let temperatureElement = document.querySelector("#temperature");
@@ -73,3 +96,5 @@ celsiusLink.addEventListener("click", convertToCelsius);
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", convertToFahrenheit);
+
+displayForecast();

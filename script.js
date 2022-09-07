@@ -41,6 +41,11 @@ function displayForecast() {
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
 }
+function getForecast(coordinates) {
+  console.log(coordinates);
+  let apiKey = "da26e26f0ab947650766187ca3c0290f";
+  let apiUrl = `http://api.openweathermap.org/data/2.5/forecast?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=imperial`;
+}
 
 function displayWeather(response) {
   console.log(response.data);
@@ -60,6 +65,8 @@ function displayWeather(response) {
     "src",
     `images/${response.data.weather[0].description}.png`
   );
+
+  getForecast(response.data.coord);
 }
 
 function search(event) {

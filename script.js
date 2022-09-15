@@ -44,7 +44,7 @@ function displayForecast(response) {
       <div class="weekday">
         ${formatDay(forecastDay.dt)}
       </div>
-      <img src="images/${forecastDay.weather[0].description}.png" class="mini-icon" />
+      <img src="images/${forecastDay.weather[0].description}.png" class="mini-icon" id="mini" />
       <div class="temp">
         ${
           Math.round(forecastDay.temp.max)}°
@@ -55,6 +55,7 @@ function displayForecast(response) {
 
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
+
 }
 function getForecast(coordinates) {
   console.log(coordinates);
